@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+
+outputs/
+checkpoints/
+wandb/
+
+.ipynb_checkpoints/
+
+Data/*.pth
+Data/*.npy
+
+.DS_Store
