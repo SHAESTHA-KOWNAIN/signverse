@@ -1,0 +1,39 @@
+# SignVerse – Python dependencies
+# Generated for:
+#   datasets/sign_dataset.py
+#   scripts/explore_dataset.py
+#   models/text_encoder.py
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# GPU (CUDA 12.x):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Deep learning framework
+torch>=2.1.0
+
+# HuggingFace ecosystem
+# transformers: T5EncoderModel, AutoTokenizer (flan-t5-base)
+# tokenizers:   Rust-backed fast tokenizer required by AutoTokenizer(use_fast=True)
+# sentencepiece: SentencePiece vocab used by flan-t5-base tokenizer
+# huggingface-hub: model/tokenizer download and caching
+# safetensors:  preferred weight format for HuggingFace models
+transformers>=4.40.0
+tokenizers>=0.19.0
+sentencepiece>=0.1.99
+huggingface-hub>=0.22.0
+safetensors>=0.4.0
+
+# Data handling
+pandas>=2.0.0
+numpy>=1.26.0
+
+# Visualisation (explore_dataset.py)
+matplotlib>=3.8.0
+scipy>=1.11.0
+
+# Utilities
+tqdm>=4.66.0
